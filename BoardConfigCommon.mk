@@ -122,6 +122,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
+# Verified Boot
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
