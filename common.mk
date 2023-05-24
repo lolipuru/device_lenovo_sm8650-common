@@ -10,6 +10,9 @@ $(call inherit-product, vendor/lenovo/sm8650-common/sm8650-common-vendor.mk)
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Virtualization service
+$(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
