@@ -147,6 +147,17 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
+# VINTF
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+
+DEVICE_MATRIX_FILE := \
+    hardware/qcom-caf/common/compatibility_matrix.xml
+
+DEVICE_MANIFEST_SKUS := pineapple
+DEVICE_MANIFEST_PINEAPPLE_FILES := \
+    $(COMMON_PATH)/configs/vintf/manifest_pineapple.xml
+
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
